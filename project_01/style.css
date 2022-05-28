@@ -273,6 +273,7 @@ body {
 }
 
 .passage {
-    text-align: center;
+    text-align: justify;
     font-family: 'Kanit', sans-serif;
+    margin: 15px;
 }
