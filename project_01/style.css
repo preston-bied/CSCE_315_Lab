@@ -260,10 +260,19 @@ body {
     font-family: 'Kanit', sans-serif;
 }
 
+.link {
+    color: #500000;
+}
+
 .link:visited {
     color: #500000;
 }
 
 .link:hover {
     text-decoration: none;
+}
+
+.passage {
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
 }
