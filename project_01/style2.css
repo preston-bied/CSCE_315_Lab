@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap');
+
+body {
+    background-image: url("assets/code-background.jpg");
+}
+
+#nav {
+    list-style-type: none;
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    backdrop-filter: saturate(180%) blur(20px);
+}
+
+#nav li {
+    float: left;
+}
+
+#nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Kanit', sans-serif;
+}
+
+#nav li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+
+}
+
+.title {
+    font-size: 90px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    margin-top: 20px;
+    text-decoration: underline;
+    color: white;
+}
+
+#landing-desc {
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    color: white;
+}
+
+.module-portfolio {
+    position: relative;
+    color: white;
+    text-shadow: 3px 3px black;
+    font-family: 'Kanit', sans-serif;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.module-portfolio::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+    background-repeat: no-repeat;
+    filter: saturate(180%) blur(5px);
+}
+
+.module-portfolio h1 {
+    margin: 15px;
+    margin-top: 30px;
+}
+
+.module-portfolio p {
+    background: rgba(0, 0, 0, 0.5);
+    font-size: 20px;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.module-portfolio button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 10px 25px;
+    color: black;
+    background-color: #ddd;
+    text-align: center;
+    cursor: pointer;
+}
+
+.module-portfolio button:hover {
+    background-color: #555;
+    color: white;
+}
+
+.module-qualifications {
+    position: relative;
+    color: white;
+    text-shadow: 3px 3px black;
+    font-family: 'Kanit', sans-serif;
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+}
+
+.module-qualifications::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+    background-repeat: no-repeat;
+    filter: blur(5px) saturate(180%);
+}
+
+.module-qualifications h1 {
+    margin: 15px;
+    margin-top: 25px;
+}
+
+.module-qualifications p {
+    background: rgba(0, 0, 0, 0.5);
+    font-size: 20px;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.module-qualifications button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 10px 25px;
+    color: black;
+    background-color: #ddd;
+    text-align: center;
+    cursor: pointer;
+}
+
+.module-qualifications button:hover {
+    background-color: #555;
+    color: white;
+}
+.module-service {
+    position: relative;
+    color: white;
+    text-shadow: 3px 3px black;
+    font-family: 'Kanit', sans-serif;
+    text-align: center;
+    margin-top: 75px;
+    padding-top: 20px;
+}
+
+.module-service::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+    background-repeat: no-repeat;
+    filter: blur(5px) saturate(180%);
+}
+
+.module-service h1 {
+    margin: 15px;
+    margin-top: 25px;
+}
+
+.module-service p {
+    background: rgba(0, 0, 0, 0.5);
+    font-size: 20px;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.module-service button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 10px 25px;
+    color: black;
+    background-color: #ddd;
+    text-align: center;
+    cursor: pointer;
+}
+
+.module-service button:hover {
+    background-color: #555;
+    color: white;
+}
+
+.bottom-break {
+    margin-top: 10px;
+}
+
+#gig-em {
+    margin-top: 60px;
+}
+
+.subtitle {
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+}
+
+#pdf {
+    position: static;
+    margin-left: 20%;
+}
+
+.block {
+    display: table;
+    border: 5px solid #500000;
+    padding: 30px;
+    margin: 40px;
+}
+
+.block:hover {
+    border: 5px outset #d09797;
+}
+
+.block-img img {
+    vertical-align: middle;
+    display: table-cell;
+    margin-right: 60px;
+    margin-left: 40px;
+}
+
+.block-text {
+    vertical-align: middle;
+    display: table-cell;
+    font-family: 'Kanit', sans-serif;
+}
+
+.link {
+    color: #500000;
+}
+
+.link:visited {
+    color: #500000;
+}
+
+.link:hover {
+    text-decoration: none;
+}
+
+.passage {
+    text-align: justify;
+    font-family: 'Kanit', sans-serif;
+    margin: 15px;
+}
+
+.buttons {
+    margin: auto;
+}
