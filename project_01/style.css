@@ -251,7 +251,10 @@ body {
 
 #pdf {
     position: static;
-    margin-left: 20%;
+    margin: auto;
+    width: 50%;
+    margin-left: 24%;
+    margin-bottom: 40px;
 }
 
 .columns:after {
