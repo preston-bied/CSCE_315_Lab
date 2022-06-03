@@ -3,8 +3,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Francois+One&display=swap');
+
 body {
     background-image: url("assets/code-background.jpg");
+    background-size: cover;
 }
 
 #nav {
@@ -37,30 +41,42 @@ body {
 }
 
 .title {
-    font-size: 90px;
+    font-size: 110px;
     text-align: center;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Bebas Neue';
     margin: 0;
     margin-top: 20px;
-    text-decoration: underline;
     color: white;
+    letter-spacing: 6px;
+    text-shadow: 5px 5px black;
 }
 
 #landing-desc {
     font-size: 20px;
     text-align: center;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Francois One', sans-serif;
     margin: 0;
     color: white;
+    text-shadow: 2px 2px black;
+}
+
+.modules:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 .module-portfolio {
+    float: left;
+    width: 29%;
     position: relative;
     color: white;
     text-shadow: 3px 3px black;
     font-family: 'Kanit', sans-serif;
     text-align: center;
     padding-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .module-portfolio::before {
@@ -85,7 +101,7 @@ body {
 
 .module-portfolio p {
     background: rgba(0, 0, 0, 0.5);
-    font-size: 20px;
+    font-size: 15px;
     width: 70%;
     margin: auto;
     margin-bottom: 10px;
@@ -109,13 +125,16 @@ body {
 }
 
 .module-qualifications {
+    float: left;
+    width: 33%;
     position: relative;
     color: white;
     text-shadow: 3px 3px black;
     font-family: 'Kanit', sans-serif;
     text-align: center;
-    margin-top: 40px;
-    padding-top: 20px;
+    padding: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .module-qualifications::before {
@@ -140,7 +159,7 @@ body {
 
 .module-qualifications p {
     background: rgba(0, 0, 0, 0.5);
-    font-size: 20px;
+    font-size: 15px;
     width: 70%;
     margin: auto;
     margin-bottom: 10px;
@@ -163,13 +182,16 @@ body {
     color: white;
 }
 .module-service {
+    float: left;
+    width: 29%;
     position: relative;
     color: white;
     text-shadow: 3px 3px black;
     font-family: 'Kanit', sans-serif;
     text-align: center;
-    margin-top: 75px;
     padding-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .module-service::before {
@@ -194,7 +216,7 @@ body {
 
 .module-service p {
     background: rgba(0, 0, 0, 0.5);
-    font-size: 20px;
+    font-size: 15px;
     width: 70%;
     margin: auto;
     margin-bottom: 10px;
@@ -221,10 +243,6 @@ body {
     margin-top: 10px;
 }
 
-#gig-em {
-    margin-top: 60px;
-}
-
 .subtitle {
     font-family: 'Rubik', sans-serif;
     text-align: center;
@@ -235,36 +253,40 @@ body {
     margin-left: 20%;
 }
 
-.block {
+.columns:after {
+    content: "";
     display: table;
-    border: 5px solid #500000;
-    padding: 30px;
-    margin: 40px;
+    clear: both;
 }
 
-.block:hover {
-    border: 5px outset #d09797;
+.block {
+    float: left;
+    width: 29%;
+    margin: 10px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: saturate(180%) blur(5px);
+    text-align: center;
 }
 
 .block-img img {
-    vertical-align: middle;
-    display: table-cell;
-    margin-right: 60px;
-    margin-left: 40px;
+    border: 2px solid rgb(199, 199, 199);
+    padding: 20px;
+    margin-left: 30px;
 }
 
 .block-text {
-    vertical-align: middle;
-    display: table-cell;
     font-family: 'Kanit', sans-serif;
+    color: white;
+    padding: 30px;
 }
 
 .link {
-    color: #500000;
+    color: rgb(199, 239, 239);
 }
 
 .link:visited {
-    color: #500000;
+    color: rgb(199, 239, 239);
 }
 
 .link:hover {
