@@ -16,7 +16,7 @@ function show_css() {
     style2.onclick = swap_style_sheet("style1.css");
 }
 
-function show_new_css() {
+function show_old_css() {
     no_style.onclick = swap_style_sheet("style2.css");
     style1.onclick = swap_style_sheet("style2.css");
 }

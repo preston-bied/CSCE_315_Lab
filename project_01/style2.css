@@ -3,12 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Francois+One&display=swap');
-
 body {
-    background-image: url("assets/code-background.jpg");
-    background-size: cover;
+    background-color: #eeeee4;
 }
 
 #nav {
@@ -17,9 +13,8 @@ body {
     margin-bottom: 10px;
     padding: 0;
     overflow: hidden;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: #500000;
     width: 100%;
-    backdrop-filter: saturate(180%) blur(20px);
 }
 
 #nav li {
@@ -36,47 +31,34 @@ body {
 }
 
 #nav li a:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-
+    background-color: #eeeee4;
+    color: #500000;
 }
 
 .title {
-    font-size: 110px;
+    font-size: 90px;
     text-align: center;
-    font-family: 'Bebas Neue';
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     margin-top: 20px;
-    color: white;
-    letter-spacing: 6px;
-    text-shadow: 5px 5px black;
+    text-decoration: underline;
+    font-style: italic;
 }
 
 #landing-desc {
     font-size: 20px;
     text-align: center;
-    font-family: 'Francois One', sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
-    color: white;
-    text-shadow: 2px 2px black;
-}
-
-.modules:after {
-    content: "";
-    display: table;
-    clear: both;
 }
 
 .module-portfolio {
-    float: left;
-    width: 29%;
     position: relative;
     color: white;
     text-shadow: 3px 3px black;
     font-family: 'Kanit', sans-serif;
     text-align: center;
     padding-top: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
 }
 
 .module-portfolio::before {
@@ -86,12 +68,12 @@ body {
     right: 0;
     z-index: -1;
     display: block;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-image: url("assets/code-banner.jpg");
     background-size: cover;
     width: 100%;
     height: 300px;
     background-repeat: no-repeat;
-    filter: saturate(180%) blur(5px);
+    filter: blur(5px);
 }
 
 .module-portfolio h1 {
@@ -101,7 +83,7 @@ body {
 
 .module-portfolio p {
     background: rgba(0, 0, 0, 0.5);
-    font-size: 15px;
+    font-size: 20px;
     width: 70%;
     margin: auto;
     margin-bottom: 10px;
@@ -125,16 +107,13 @@ body {
 }
 
 .module-qualifications {
-    float: left;
-    width: 33%;
     position: relative;
     color: white;
     text-shadow: 3px 3px black;
     font-family: 'Kanit', sans-serif;
     text-align: center;
-    padding: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-top: 40px;
+    padding-top: 20px;
 }
 
 .module-qualifications::before {
@@ -144,12 +123,12 @@ body {
     right: 0;
     z-index: -1;
     display: block;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-image: url("assets/qualifications-banner.jpeg");
     background-size: cover;
     width: 100%;
     height: 300px;
     background-repeat: no-repeat;
-    filter: blur(5px) saturate(180%);
+    filter: blur(5px);
 }
 
 .module-qualifications h1 {
@@ -159,7 +138,7 @@ body {
 
 .module-qualifications p {
     background: rgba(0, 0, 0, 0.5);
-    font-size: 15px;
+    font-size: 20px;
     width: 70%;
     margin: auto;
     margin-bottom: 10px;
@@ -182,16 +161,13 @@ body {
     color: white;
 }
 .module-service {
-    float: left;
-    width: 29%;
     position: relative;
     color: white;
     text-shadow: 3px 3px black;
     font-family: 'Kanit', sans-serif;
     text-align: center;
+    margin-top: 75px;
     padding-top: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
 }
 
 .module-service::before {
@@ -201,12 +177,12 @@ body {
     right: 0;
     z-index: -1;
     display: block;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-image: url("assets/service-banner.jpeg");
     background-size: cover;
     width: 100%;
     height: 300px;
     background-repeat: no-repeat;
-    filter: blur(5px) saturate(180%);
+    filter: blur(5px);
 }
 
 .module-service h1 {
@@ -216,7 +192,7 @@ body {
 
 .module-service p {
     background: rgba(0, 0, 0, 0.5);
-    font-size: 15px;
+    font-size: 20px;
     width: 70%;
     margin: auto;
     margin-bottom: 10px;
@@ -253,40 +229,36 @@ body {
     margin-left: 20%;
 }
 
-.columns:after {
-    content: "";
+.block {
     display: table;
-    clear: both;
+    border: 5px solid #500000;
+    padding: 30px;
+    margin: 40px;
 }
 
-.block {
-    float: left;
-    width: 29%;
-    margin: 10px;
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.5);
-    backdrop-filter: saturate(180%) blur(5px);
-    text-align: center;
+.block:hover {
+    border: 5px outset #d09797;
 }
 
 .block-img img {
-    border: 2px solid rgb(199, 199, 199);
-    padding: 20px;
-    margin-left: 30px;
+    vertical-align: middle;
+    display: table-cell;
+    margin-right: 60px;
+    margin-left: 40px;
 }
 
 .block-text {
+    vertical-align: middle;
+    display: table-cell;
     font-family: 'Kanit', sans-serif;
-    color: white;
-    padding: 30px;
 }
 
 .link {
-    color: rgb(199, 239, 239);
+    color: #500000;
 }
 
 .link:visited {
-    color: rgb(199, 239, 239);
+    color: #500000;
 }
 
 .link:hover {
@@ -301,4 +273,23 @@ body {
 
 .buttons {
     margin: auto;
+    margin-left: 620px;
+}
+
+.btn {
+    margin-top: 80px;
+    margin-bottom: 30px;
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 10px 25px;
+    color: black;
+    background-color: #ddd;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #555;
+    color: white;
 }
